@@ -73,8 +73,8 @@ The AI is responsible for semantic understanding and mapping, but it does NOT ge
 ## Local Setup
 
 ```bash
-git clone https://github.com/siddreddy07/Veda-AI.git
-cd Veda-AI
+git clone https://github.com/siddreddy07/Veda-AI.git vedaAi
+cd vedaAi
 npm install
 ```
 
