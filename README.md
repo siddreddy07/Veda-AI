@@ -2,7 +2,7 @@
 
 A teacher can upload a question paper and a student's handwritten answer sheet. The application extracts questions and answers, maps them together, grades the responses, and highlights the corresponding answer regions directly on the answer sheet.
 
-**Live Demo:** `<DEPLOYED_URL>`
+**Live Demo:** https://veda-ai-seven-blue.vercel.app/
 
 ---
 

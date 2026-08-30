@@ -4,10 +4,18 @@ import {
   Geist_Mono,
 } from "next/font/google"
 
+import type { Metadata } from "next"
+
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/sonner"
 import { cn } from "@/lib/utils"
+
+export const metadata: Metadata = {
+  title: "Veda AI",
+  description:
+    "Veda AI — upload a question paper and answer sheet to auto-extract, map, and grade student answers with AI.",
+}
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
