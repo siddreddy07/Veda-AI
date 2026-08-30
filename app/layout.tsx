@@ -12,7 +12,7 @@ import { Toaster } from "@/components/ui/sonner"
 import { cn } from "@/lib/utils"
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://veda-ai-seven-blue.vercel.app"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
