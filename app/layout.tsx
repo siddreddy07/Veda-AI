@@ -11,10 +11,29 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/sonner"
 import { cn } from "@/lib/utils"
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Veda AI",
   description:
     "Veda AI — upload a question paper and answer sheet to auto-extract, map, and grade student answers with AI.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Veda AI",
+    title: "Veda AI",
+    description:
+      "Veda AI — upload a question paper and answer sheet to auto-extract, map, and grade student answers with AI.",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Veda AI",
+    description:
+      "Veda AI — upload a question paper and answer sheet to auto-extract, map, and grade student answers with AI.",
+  },
 }
 
 const bricolage = Bricolage_Grotesque({
