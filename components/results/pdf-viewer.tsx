@@ -277,9 +277,9 @@ export function PdfViewer({
               style={{ width: pageWidth || undefined, height: "auto" }}
               className="shrink-0 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
             />
-          ) : (
+          ) : answerSheetUrl ? (
             <Document
-              file={answerSheetUrl ?? "/veda_demo_answer_sheet.pdf"}
+              file={answerSheetUrl}
               onLoadSuccess={({ numPages }) => setNumPages(numPages)}
             >
               {Array.from({ length: numPages }, (_, index) => {
@@ -330,6 +330,10 @@ export function PdfViewer({
                 );
               })}
             </Document>
+          ) : (
+            <div className="flex min-h-full w-full items-center justify-center p-8">
+              <p className="text-sm text-white/60">No answer sheet available.</p>
+            </div>
           )}
         </div>
       </div>

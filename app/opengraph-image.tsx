@@ -7,9 +7,6 @@ export const size = {
 }
 export const contentType = "image/png"
 
-const tagline =
-  "Upload a question paper and answer sheet to auto-extract, map, and grade student answers with AI."
-
 function VedaLogo() {
   return (
     <svg
@@ -66,50 +63,15 @@ export default function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: 32,
           background:
             "linear-gradient(135deg, #303030 0%, #232323 45%, #171717 100%)",
           color: "white",
         }}
       >
-        <div style={{ display: "flex", width: 168, height: 168 }}>
+        <div style={{ display: "flex", width: 280, height: 280 }}>
           <VedaLogo />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            fontSize: 96,
-            fontWeight: 700,
-            letterSpacing: -2,
-            fontFamily: "geist",
-          }}
-        >
-          Veda AI
-        </div>
-        <div
-          style={{
-            height: 8,
-            width: 72,
-            borderRadius: 999,
-            background: "#FF5623",
-            marginTop: -8,
-          }}
-        />
-        <div
-          style={{
-            display: "flex",
-            maxWidth: 820,
-            textAlign: "center",
-            fontSize: 36,
-            lineHeight: 1.2,
-            color: "#C7C7C7",
-            fontFamily: "geist",
-          }}
-        >
-          {tagline}
         </div>
       </div>
     ),
